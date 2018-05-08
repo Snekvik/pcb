@@ -1,0 +1,33 @@
+---
+title: " Identifying and predicting the polar cap boundary"
+author: "Kristian Snekvik"
+date: "5/7/2018"
+output: 
+  html_document:
+    theme: journal
+    toc: TRUE
+    number_sections: TRUE
+    toc_depth: 2  
+    toc_float:
+      collapsed: TRUE
+      smooth_scroll: TRUE
+bibliography: bibfile.bib
+csl: american-geophysical-union.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Introduction
+The polar cap boundary is usually considered as the boundary between open and closed field lines in the ionosphere. It is often difficult to know exactly where this boundary is located. Varies techniques have been used in the past. (*Write a summary of past techniques here.*)
+
+
+
+### Motivation {-}
+
+tsfsd sdf srgdgfv
+
+##### Misc {-}
+
+
