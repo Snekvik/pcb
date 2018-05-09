@@ -1,18 +1,25 @@
 ---
-title: " Identifying and predicting the polar cap boundary"
+title: ' Identifying and predicting the polar cap boundary'
 author: "Kristian Snekvik"
 date: "5/7/2018"
-output: 
+output:
+  pdf_document:
+    citation_package: natbib
+    highlight: tango
+    toc: yes
+    toc_depth: '2'
+    keep_tex: true
   html_document:
+    fig_caption: yes
+    number_sections: yes
     theme: journal
-    toc: TRUE
-    number_sections: TRUE
-    toc_depth: 2  
+    toc: yes
+    toc_depth: 2
     toc_float:
-      collapsed: TRUE
-      smooth_scroll: TRUE
-bibliography: bibfile.bib
+      collapsed: yes
+      smooth_scroll: yes
 csl: american-geophysical-union.csl
+bibliography: bibfile.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -20,14 +27,29 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 #Introduction
-The polar cap boundary is usually considered as the boundary between open and closed field lines in the ionosphere. It is often difficult to know exactly where this boundary is located. Varies techniques have been used in the past. (*Write a summary of past techniques here.*)
+The polar cap boundary (PCB) is usually considered as the boundary between open and closed field lines in the ionosphere. It is often difficult to know exactly where this boundary is located. Varies techniques have been used in the past. 
+<!-- (*Write a summary of past techniques here.*) -->
+
+In this project we have tried to identify the PCB based on magnetic perturbations at 780 km altitude. The measurements come from 66 iridium spacecraft, and are part of the the AMPERE data set \cite[]{waters01, anderson14}. 
+
+The motivation for finding the PCB is that it crucial to know where this boundary is in order to correctly interpret observations in the ionosphere. This is particularly important for studies of the magnetosphere ionosphere coupling since the magnetic field lines on opposite sides of the PCB are connected to vastly different regions of the magnetosphere.
+
+This documentation is divided into two sections. In the first section I describe the motivation for using the magnetic field to find the PCB. I also describe a short study where it was verified that the magnetic field can be used to determine the pcb. 
+
+The analysis has been done in Matlab. I will refer to the various Matlab functions used in the analysis.
+
+# Motivation for using the magnetic field to find the PCB
 
 
 
-### Motivation {-}
+```{r fig.cap = "This is the caption. \\label{figure1}", eval=FALSE, echo=FALSE}
+library(datasets)
+plot(mtcars)
+```
+
 
 tsfsd sdf srgdgfv
 
-##### Misc {-}
+### Misc {-}
 
 
