@@ -39,6 +39,38 @@ This documentation is divided into two sections. In the first section I describe
 The analysis has been done in Matlab. I will refer to the various Matlab functions used in the analysis.
 
 # Motivation for using the magnetic field to find the PCB
+The Dungey cycle is the dominant pattern for flow of plasma in the magnetosphere. Figure \ref{fig1}a) illustrates this. This figure show several magnetic field lines. The pattern of the flow of plasma is indicated by the arrows. Figure \ref{fig1}b) also show the flow of plasma in the Dungey cycle. But this time as seen from directly above the north pole. The PCB is shown by a circle.  The numbers in the two figures show how the field lines connect different regions of the magnetosphere with the topside ionosphere.
+
+\begin{figure}[htbp]
+\begin{center}
+\fbox{\includegraphics[height = .4\textwidth]{./figures/fig1.pdf}}
+\caption{The Dungey cycle. }
+\label{fig1}
+\end{center}
+\end{figure}
+
+In the morning and evening it is clear from figure \ref{fig1}b) that the direction of the plasma flow is opposite at the poleward and the equatorward sides of the PCB. If we had measurements of the plasma flow, we would be able to determine the location of the PCB. Unfortunately, such measurements are usually not available. However, the AMPERE data set provide global maps of the magnetic field. The magnetic field perturbations due to the flow are expected to roughly opposite to the flow in the northern hemisphere. Here follows a simple argument for how this happens. A much more detailed discussion of the physics involved were given in \cite{tu14}
+Figure \ref{fig2} shows why. 
+
+\begin{figure}[htbp]
+\begin{center}
+\fbox{\includegraphics[height = .4\textwidth]{./figures/fig2.pdf}}
+\caption{A plasma flow in the magnetosphere will create a magnetic perturbation in the ionosphere. }
+\label{fig2}
+\end{center}
+\end{figure}
+
+In figure \ref{fig2}a) a plasma flow (V) caused by reconnection starts in the magnetosphere. In the beginning only the magnetospheric end of the field line is moving. Collisions in the ionosphere between ions and neutral particles create a drag force which opposes the flow. The field line bends in the direction of the flow in figure \ref{fig2}b). This results in a tension force opposite to the drag force. The ionospheric flow is still slower than the magnetospheric flow. Eventually the ionospheric flow reach the same magnitude as the magnetospheric flow in figure \ref{fig2}c).
+
+## Comparing with particle signatures around the PCB
+According to the arguement above there should be a reversal of the magnetic field perturbations at the PCB. However this hypothesis should be verified by comparing with other techniques of finding the PCB. 
+
+```{octave, echo=FALSE, eval=FALSE}
+# When I started this project, I used Matlab. I will refer to this analysis in code chunks with octace as the engine. The goal is to gradually translate the functions into R. The data were
+readdmsp()
+# in the data directory
+```
+
 
 
 
